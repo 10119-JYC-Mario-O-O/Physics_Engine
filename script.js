@@ -1,14 +1,9 @@
 let input;
 let time = 0;
 let gravityAcceleration = 9.8;
-let mouseFollowing = true;
-
 
 let circleArray = [];
 let squareArray = [];
-
-let mouseX;
-let mouseY;
 
 function drawThing() {    
     if (mouseFollowing==true){    
@@ -18,12 +13,6 @@ function drawThing() {
     }
 
 }
-
-document.addEventListener('mousemove', function(event) {
-    mouseX = event.clientX;
-    mouseY = event.clientY;
-    // if (mouseFollowing == true){thing.x=mouseX,thing.y=mouseY}
-});
 
 function frame_execute() {
     requestAnimationFrame(frame_execute);
