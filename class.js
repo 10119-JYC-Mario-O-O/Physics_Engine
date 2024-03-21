@@ -25,19 +25,17 @@ class circle {
     
       
     draw() {
-        
         function freeFall(){
             this.velocity += gravityAcceleration
-          }
+        }
+
         freeFall()
 
         if (this.mouseFollowing == true && this.clickswitch == false) {
             ctx.beginPath();
             ctx.arc(mouseX, mouseY, this.radius_oneSideLength, 0, 2 * Math.PI);
             ctx.stroke();
-        }
-
-        else if (this.mouseFollowing == false && this.clickswitch == true){
+        } else if (this.mouseFollowing == false && this.clickswitch == true){
             ctx.beginPath();
             ctx.arc(mouseX, mouseY-velocity, this.radius_oneSideLength, 0, 2 * Math.PI);
             ctx.stroke();
@@ -69,9 +67,7 @@ class square {
     draw() {
         if (this.mouseFollowing == true && this.clickswitch == false) {
             ctx.strokeRect(mouseX - this.radius_oneSideLength / 2, mouseY - this.radius_oneSideLength / 2, this.radius_oneSideLength, this.radius_oneSideLength);
-        }
-
-        else if (this.mouseFollowing == true && this.clickswitch == false) {
+        } else if (this.mouseFollowing == true && this.clickswitch == false) {
             ctx.strokeRect(mouseX - this.radius_oneSideLength / 2, mouseY - this.radius_oneSideLength / 2, this.radius_oneSideLength, this.radius_oneSideLength);
         }
     }

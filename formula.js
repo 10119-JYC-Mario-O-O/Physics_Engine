@@ -4,18 +4,18 @@ var laterX;
 var laterY;
 
 document.addEventListener("keydown", function(e) {
-  if (e.code == "Space") {
-    firstX = thing.x;
-    firstY = thing.y;
-  }
+    if (e.code == "Space") {
+        firstX = thing.x;
+        firstY = thing.y;
+    }
 });
 
 document.addEventListener("keyup", function(e) {
-  if (e.code == "Space") {
-    laterX = thing.x;
-    laterY = thing.y;
-    console.log(`firstX : ${firstX}, `, `firstY : ${firstY}, `, `laterX : ${laterX}, `, `laterY : ${laterY}`);
-  }
+    if (e.code == "Space") {
+        laterX = thing.x;
+        laterY = thing.y;
+        console.log(`firstX : ${firstX}, `, `firstY : ${firstY}, `, `laterX : ${laterX}, `, `laterY : ${laterY}`);
+    }
 });
 
 
